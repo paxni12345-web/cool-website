@@ -19,16 +19,12 @@ const fadeUp = {
 }
 
 const navLinks = [
-  { label: 'Features', id: 'features' },
-  { label: 'How it Works', id: 'how-it-works' },
-  { label: 'Use Cases', id: 'use-cases' },
-  { label: 'Pricing', id: 'pricing' },
-  { label: 'Docs', id: 'docs' },
+  { label: 'Features', href: '#features' },
+  { label: 'How it Works', href: '#how-it-works' },
+  { label: 'Use Cases', href: '#use-cases' },
+  { label: 'Pricing', href: '#pricing' },
+  { label: 'Docs', href: '#docs' },
 ]
-
-function scrollToId(id: string) {
-  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-}
 
 const logos = ['OpenAI', 'Anthropic', 'LangChain', 'Vercel', 'Hugging Face']
 
@@ -121,14 +117,13 @@ export default function App() {
 
             <div className="hidden md:flex liquid-glass rounded-full px-1.5 py-1.5 items-center gap-1">
               {navLinks.map((link) => (
-                <button
+                <a
                   key={link.label}
-                  type="button"
-                  onClick={() => scrollToId(link.id)}
+                  href={link.href}
                   className="px-3 py-2 text-sm font-medium text-white/90 font-body hover:text-white transition-colors"
                 >
                   {link.label}
-                </button>
+                </a>
               ))}
               <Link
                 to="/login"
@@ -190,9 +185,9 @@ export default function App() {
               >
                 Try the Agent <ArrowUpRight className="w-4 h-4" />
               </Link>
-              <button type="button" onClick={() => scrollToId("how-it-works")} className="flex items-center gap-2 text-sm text-white/90">
+              <button type="button" onClick={() => scrollToId('how-it-works')} className="flex items-center gap-2 text-sm text-white/90">
                 <Play className="w-4 h-4" /> Watch Demo
-              </a>
+              </button>
             </motion.div>
 
             <motion.div
