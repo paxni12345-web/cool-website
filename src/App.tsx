@@ -19,12 +19,16 @@ const fadeUp = {
 }
 
 const navLinks = [
-  { label: 'Features', href: '#features' },
-  { label: 'How it Works', href: '#how-it-works' },
-  { label: 'Use Cases', href: '#use-cases' },
-  { label: 'Pricing', href: '#pricing' },
-  { label: 'Docs', href: '#docs' },
+  { label: 'Features', id: 'features' },
+  { label: 'How it Works', id: 'how-it-works' },
+  { label: 'Use Cases', id: 'use-cases' },
+  { label: 'Pricing', id: 'pricing' },
+  { label: 'Docs', id: 'docs' },
 ]
+
+function scrollToId(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
 
 const logos = ['OpenAI', 'Anthropic', 'LangChain', 'Vercel', 'Hugging Face']
 
@@ -117,13 +121,14 @@ export default function App() {
 
             <div className="hidden md:flex liquid-glass rounded-full px-1.5 py-1.5 items-center gap-1">
               {navLinks.map((link) => (
-                <a
+                <button
                   key={link.label}
-                  href={link.href}
+                  type="button"
+                  onClick={() => scrollToId(link.id)}
                   className="px-3 py-2 text-sm font-medium text-white/90 font-body hover:text-white transition-colors"
                 >
                   {link.label}
-                </a>
+                </button>
               ))}
               <Link
                 to="/login"
