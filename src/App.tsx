@@ -17,27 +17,27 @@ const fadeUp = {
   transition: { duration: 0.8, ease: 'easeOut' },
 }
 
-const navLinks = ['Work', 'Studio', 'Services', 'Journal', 'Contact']
-const logos = ['Aeon', 'Vela', 'Apex', 'Orbit', 'Zeno']
+const navLinks = ['Features', 'How it Works', 'Use Cases', 'Pricing', 'Docs']
+const logos = ['OpenAI', 'Anthropic', 'LangChain', 'Vercel', 'Hugging Face']
 
 const capabilities = [
   {
     icon: ImageIcon,
-    tags: ['Brand Systems', 'Art Direction', 'Visual Identity', 'Motion'],
-    title: 'Design',
-    body: 'We shape identities and interfaces that feel unmistakably yours — typographic systems, component libraries, and art-directed pages that scale without losing soul.',
+    tags: ['Planning', 'Reasoning', 'Memory', 'Tools'],
+    title: 'Autonomous',
+    body: 'The agent plans multi-step tasks, uses tools, remembers context across sessions, and iterates until the goal is achieved — without constant human hand-holding.',
   },
   {
     icon: MovieIcon,
-    tags: ['React', 'Next.js', 'Headless CMS', 'Edge-Ready'],
-    title: 'Engineering',
-    body: 'Production-grade front-ends built on modern stacks. Performant, accessible, and instrumented — with code your team will enjoy extending long after launch.',
+    tags: ['Code', 'Terminal', 'Browser', 'APIs'],
+    title: 'Tool-Native',
+    body: 'Built to call real tools: write and run code, browse the web, hit APIs, edit files, and control a sandboxed environment. Not just chat — actual work.',
   },
   {
     icon: LightbulbIcon,
-    tags: ['SEO', 'Analytics', 'A/B Testing', 'Retention'],
-    title: 'Growth',
-    body: 'Launch is the starting line. We partner with your team on conversion, content, and iteration loops that turn a beautiful site into a compounding asset.',
+    tags: ['Self-Correct', 'Retry', 'Reflect', 'Improve'],
+    title: 'Self-Improving',
+    body: 'When something fails, the agent diagnoses the error, adjusts its approach, and tries again. Continuous feedback loops turn one-shot prompts into reliable outcomes.',
   },
 ]
 
@@ -63,17 +63,17 @@ export default function App() {
               {navLinks.map((link) => (
                 <a
                   key={link}
-                  href={`#${link.toLowerCase()}`}
+                  href={`#${link.toLowerCase().replace(/ /g, '-')}`}
                   className="px-3 py-2 text-sm font-medium text-white/90 font-body"
                 >
                   {link}
                 </a>
               ))}
               <a
-                href="#contact"
+                href="#get-started"
                 className="ml-1 px-4 py-2 bg-white text-black rounded-full text-sm font-medium flex items-center gap-1.5"
               >
-                Start a Project <ArrowUpRight className="w-4 h-4" />
+                Get Started <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>
 
@@ -90,12 +90,12 @@ export default function App() {
               <span className="bg-white text-black text-xs font-semibold px-2 py-0.5 rounded-full">
                 New
               </span>
-              <span className="text-white/90">Booking Q3 2026 engagements — limited capacity</span>
+              <span className="text-white/90">Agent CLI v2 is live — autonomous coding agents</span>
             </motion.div>
 
             <div className="mt-6 max-w-3xl">
               <BlurText
-                text="Crafted Digital Experiences Built to Outlast Trends"
+                text="Autonomous AI Agents That Actually Get Work Done"
                 className="text-6xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8] tracking-[-4px]"
               />
             </div>
@@ -105,9 +105,9 @@ export default function App() {
               transition={{ ...fadeUp.transition, delay: 0.8 }}
               className="mt-4 text-sm md:text-base text-white max-w-2xl font-body font-light leading-tight"
             >
-              We are a small studio of designers and engineers shaping brand-defining websites for
-              ambitious companies. Precise typography, cinematic motion, and code you can be proud
-              of.
+              Not another chatbot. A full agent runtime with planning, tools, memory, and a
+              sandboxed environment — so it can write code, run commands, and finish complex tasks
+              end to end.
             </motion.p>
 
             <motion.div
@@ -116,13 +116,13 @@ export default function App() {
               className="mt-6 flex gap-6 items-center"
             >
               <a
-                href="#contact"
+                href="#get-started"
                 className="liquid-glass-strong rounded-full px-5 py-2.5 flex items-center gap-2 text-sm font-medium"
               >
-                Start a Project <ArrowUpRight className="w-4 h-4" />
+                Try the Agent <ArrowUpRight className="w-4 h-4" />
               </a>
               <button className="flex items-center gap-2 text-sm text-white/90">
-                <Play className="w-4 h-4" /> Watch Showreel
+                <Play className="w-4 h-4" /> Watch Demo
               </button>
             </motion.div>
 
@@ -134,16 +134,16 @@ export default function App() {
               <div className="liquid-glass p-5 w-[220px] rounded-[1.25rem] text-left">
                 <ClockIcon className="w-6 h-6 text-white/80" />
                 <div className="text-4xl font-heading italic tracking-[-1px] leading-none mt-4">
-                  6 Weeks
+                  10x
                 </div>
-                <div className="text-sm text-white/70 mt-1">Average End-to-End Launch Time</div>
+                <div className="text-sm text-white/70 mt-1">Faster Task Completion vs Manual</div>
               </div>
               <div className="liquid-glass p-5 w-[220px] rounded-[1.25rem] text-left">
                 <GlobeIcon className="w-6 h-6 text-white/80" />
                 <div className="text-4xl font-heading italic tracking-[-1px] leading-none mt-4">
-                  140+
+                  24/7
                 </div>
-                <div className="text-sm text-white/70 mt-1">Brands Shipped Across Four Continents</div>
+                <div className="text-sm text-white/70 mt-1">Always-On Agent Runtime</div>
               </div>
             </motion.div>
           </div>
@@ -155,7 +155,7 @@ export default function App() {
             className="flex flex-col items-center gap-4 pb-8"
           >
             <div className="liquid-glass rounded-full px-5 py-2 text-sm text-white/80">
-              Trusted by founders, operators, and creative directors worldwide
+              Powered by leading models and open-source frameworks
             </div>
             <div className="flex gap-12 md:gap-16 flex-wrap justify-center">
               {logos.map((name) => (
@@ -182,7 +182,7 @@ export default function App() {
           <div className="mb-auto">
             <p className="text-sm font-body text-white/80 mb-6">// Capabilities</p>
             <h2 className="font-heading italic text-6xl md:text-7xl lg:text-[6rem] leading-[0.9] tracking-[-3px] whitespace-pre-line">
-              {`Studio craft,\nend to end`}
+              {`Agent runtime,\nend to end`}
             </h2>
           </div>
 
