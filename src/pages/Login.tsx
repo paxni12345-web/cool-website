@@ -18,11 +18,11 @@ export default function Login() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    // Demo only — replace with real auth later
+    // Demo only — after login, land on Fastshot composer
     setTimeout(() => {
       setLoading(false)
-      alert('Demo login — connect your auth backend here')
-    }, 1200)
+      window.location.href = '/cool-website/fastshot.html'
+    }, 800)
   }
 
   return (
