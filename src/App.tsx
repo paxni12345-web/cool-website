@@ -27,7 +27,11 @@ const navLinks = [
 ]
 
 function scrollToId(id: string) {
-  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  const el = document.getElementById(id)
+  if (!el) return
+  const navOffset = 80
+  const top = el.getBoundingClientRect().top + window.scrollY - navOffset
+  window.scrollTo({ top, behavior: 'smooth' })
 }
 
 const logos = ['OpenAI', 'Anthropic', 'LangChain', 'Vercel', 'Hugging Face']
