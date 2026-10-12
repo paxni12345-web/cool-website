@@ -73,3 +73,8 @@ html, body {
   mask-composite: exclude;
   pointer-events: none;
 }
+
+/* Offset for fixed navbar when scrolling to sections */
+section[id] {
+  scroll-margin-top: 5rem;
+}
