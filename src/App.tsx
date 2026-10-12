@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import FadingVideo from './components/FadingVideo'
 import BlurText from './components/BlurText'
 import {
@@ -14,7 +15,7 @@ import {
 const fadeUp = {
   initial: { filter: 'blur(10px)', opacity: 0, y: 20 },
   animate: { filter: 'blur(0px)', opacity: 1, y: 0 },
-  transition: { duration: 0.8, ease: 'easeOut' },
+  transition: { duration: 0.8, ease: 'easeOut' as const },
 }
 
 const navLinks = ['Features', 'How it Works', 'Use Cases', 'Pricing', 'Docs']
@@ -69,15 +70,27 @@ export default function App() {
                   {link}
                 </a>
               ))}
-              <a
-                href="#get-started"
+              <Link
+                to="/login"
+                className="px-3 py-2 text-sm font-medium text-white/90 font-body hover:text-white"
+              >
+                Sign In
+              </Link>
+              <Link
+                to="/login"
                 className="ml-1 px-4 py-2 bg-white text-black rounded-full text-sm font-medium flex items-center gap-1.5"
               >
                 Get Started <ArrowUpRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
 
-            <div className="h-12 w-12" />
+            {/* Mobile Sign In */}
+            <Link
+              to="/login"
+              className="md:hidden liquid-glass rounded-full px-4 py-2 text-sm font-medium"
+            >
+              Sign In
+            </Link>
           </nav>
 
           {/* Main content */}
@@ -115,12 +128,12 @@ export default function App() {
               transition={{ ...fadeUp.transition, delay: 1.1 }}
               className="mt-6 flex gap-6 items-center"
             >
-              <a
-                href="#get-started"
+              <Link
+                to="/login"
                 className="liquid-glass-strong rounded-full px-5 py-2.5 flex items-center gap-2 text-sm font-medium"
               >
                 Try the Agent <ArrowUpRight className="w-4 h-4" />
-              </a>
+              </Link>
               <button className="flex items-center gap-2 text-sm text-white/90">
                 <Play className="w-4 h-4" /> Watch Demo
               </button>
