@@ -284,7 +284,13 @@ export default function App() {
       </section>
 
       {/* ========== HOW IT WORKS ========== */}
-      <section id="how-it-works" className="min-h-screen bg-black px-8 md:px-16 lg:px-20 py-24">
+      <section id="how-it-works" className="min-h-screen bg-black px-8 md:px-16 lg:px-20 py-24 relative overflow-hidden">
+        <FadingVideo
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_093722_ccfc7ebf-182f-419f-8a62-2dc02db7dd9d.mp4"
+          className="absolute inset-0 w-full h-full object-cover z-0 opacity-40"
+        />
+        <div className="absolute inset-0 bg-black/60 z-[1]" />
+        <div className="relative z-10">
         <p className="text-sm text-white/60 mb-4">// How it Works</p>
         <h2 className="font-heading italic text-5xl md:text-6xl tracking-[-2px] leading-none max-w-2xl">
           Three steps from idea to shipped code
@@ -298,10 +304,17 @@ export default function App() {
             </div>
           ))}
         </div>
+        </div>
       </section>
 
       {/* ========== USE CASES ========== */}
-      <section id="use-cases" className="min-h-screen bg-[#060910] px-8 md:px-16 lg:px-20 py-24">
+      <section id="use-cases" className="min-h-screen bg-[#060910] px-8 md:px-16 lg:px-20 py-24 relative overflow-hidden">
+        <FadingVideo
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260619_191346_9d19d66e-86a4-47f7-8dc6-712c1788c3b2.mp4"
+          className="absolute inset-0 w-full h-full object-cover z-0 opacity-35"
+        />
+        <div className="absolute inset-0 bg-black/65 z-[1]" />
+        <div className="relative z-10">
         <p className="text-sm text-white/60 mb-4">// Use Cases</p>
         <h2 className="font-heading italic text-5xl md:text-6xl tracking-[-2px] leading-none max-w-2xl">
           Built for real engineering work
@@ -314,10 +327,17 @@ export default function App() {
             </div>
           ))}
         </div>
+        </div>
       </section>
 
       {/* ========== PRICING ========== */}
-      <section id="pricing" className="min-h-screen bg-black px-8 md:px-16 lg:px-20 py-24">
+      <section id="pricing" className="min-h-screen bg-black px-8 md:px-16 lg:px-20 py-24 relative overflow-hidden">
+        <FadingVideo
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_093722_ccfc7ebf-182f-419f-8a62-2dc02db7dd9d.mp4"
+          className="absolute inset-0 w-full h-full object-cover z-0 opacity-30"
+        />
+        <div className="absolute inset-0 bg-black/70 z-[1]" />
+        <div className="relative z-10">
         <p className="text-sm text-white/60 mb-4 text-center">// Pricing</p>
         <h2 className="font-heading italic text-5xl md:text-6xl tracking-[-2px] leading-none text-center">
           Simple plans for every stage
@@ -353,10 +373,17 @@ export default function App() {
             </div>
           ))}
         </div>
+        </div>
       </section>
 
       {/* ========== DOCS ========== */}
-      <section id="docs" className="min-h-[70vh] bg-[#060910] px-8 md:px-16 lg:px-20 py-24">
+      <section id="docs" className="min-h-[70vh] bg-[#060910] px-8 md:px-16 lg:px-20 py-24 relative overflow-hidden">
+        <FadingVideo
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260619_191346_9d19d66e-86a4-47f7-8dc6-712c1788c3b2.mp4"
+          className="absolute inset-0 w-full h-full object-cover z-0 opacity-30"
+        />
+        <div className="absolute inset-0 bg-black/70 z-[1]" />
+        <div className="relative z-10">
         <p className="text-sm text-white/60 mb-4">// Docs</p>
         <h2 className="font-heading italic text-5xl md:text-6xl tracking-[-2px] leading-none max-w-2xl">
           Everything you need to get started
@@ -379,6 +406,7 @@ export default function App() {
               <p className="mt-2 text-sm text-white/60 font-light">{d.desc}</p>
             </a>
           ))}
+        </div>
         </div>
       </section>
 
