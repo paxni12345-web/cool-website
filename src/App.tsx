@@ -286,7 +286,7 @@ export default function App() {
       {/* ========== HOW IT WORKS ========== */}
       <section id="how-it-works" className="min-h-screen bg-black px-8 md:px-16 lg:px-20 py-24 relative overflow-hidden">
         <FadingVideo
-          src="https://assets.mixkit.co/videos/171/171-720.mp4"
+          src="https://assets.mixkit.co/videos/1168/1168-720.mp4"
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-50"
         />
         <div className="absolute inset-0 bg-black/80 z-[1]" />
@@ -310,7 +310,7 @@ export default function App() {
       {/* ========== USE CASES ========== */}
       <section id="use-cases" className="min-h-screen bg-[#060910] px-8 md:px-16 lg:px-20 py-24 relative overflow-hidden">
         <FadingVideo
-          src="https://assets.mixkit.co/videos/28820/28820-720.mp4"
+          src="https://assets.mixkit.co/videos/1187/1187-720.mp4"
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-50"
         />
         <div className="absolute inset-0 bg-black/80 z-[1]" />
@@ -333,7 +333,7 @@ export default function App() {
       {/* ========== PRICING ========== */}
       <section id="pricing" className="min-h-screen bg-black px-8 md:px-16 lg:px-20 py-24 relative overflow-hidden">
         <FadingVideo
-          src="https://assets.mixkit.co/videos/33139/33139-720.mp4"
+          src="https://assets.mixkit.co/videos/159/159-720.mp4"
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-50"
         />
         <div className="absolute inset-0 bg-black/70 z-[1]" />
@@ -379,7 +379,7 @@ export default function App() {
       {/* ========== DOCS ========== */}
       <section id="docs" className="min-h-[70vh] bg-[#060910] px-8 md:px-16 lg:px-20 py-24 relative overflow-hidden">
         <FadingVideo
-          src="https://assets.mixkit.co/videos/6824/6824-720.mp4"
+          src="https://assets.mixkit.co/videos/1173/1173-720.mp4"
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-50"
         />
         <div className="absolute inset-0 bg-black/70 z-[1]" />
