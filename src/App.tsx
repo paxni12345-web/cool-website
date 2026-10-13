@@ -286,7 +286,7 @@ export default function App() {
       {/* ========== HOW IT WORKS ========== */}
       <section id="how-it-works" className="min-h-screen bg-black px-8 md:px-16 lg:px-20 py-24 relative overflow-hidden">
         <FadingVideo
-          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_093722_ccfc7ebf-182f-419f-8a62-2dc02db7dd9d.mp4"
+          src="https://assets.mixkit.co/videos/32847/32847-720.mp4"
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-40"
         />
         <div className="absolute inset-0 bg-black/60 z-[1]" />
@@ -310,7 +310,7 @@ export default function App() {
       {/* ========== USE CASES ========== */}
       <section id="use-cases" className="min-h-screen bg-[#060910] px-8 md:px-16 lg:px-20 py-24 relative overflow-hidden">
         <FadingVideo
-          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260619_191346_9d19d66e-86a4-47f7-8dc6-712c1788c3b2.mp4"
+          src="https://assets.mixkit.co/videos/32853/32853-720.mp4"
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-35"
         />
         <div className="absolute inset-0 bg-black/65 z-[1]" />
@@ -333,7 +333,7 @@ export default function App() {
       {/* ========== PRICING ========== */}
       <section id="pricing" className="min-h-screen bg-black px-8 md:px-16 lg:px-20 py-24 relative overflow-hidden">
         <FadingVideo
-          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_093722_ccfc7ebf-182f-419f-8a62-2dc02db7dd9d.mp4"
+          src="https://assets.mixkit.co/videos/11181/11181-720.mp4"
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-30"
         />
         <div className="absolute inset-0 bg-black/70 z-[1]" />
@@ -379,7 +379,7 @@ export default function App() {
       {/* ========== DOCS ========== */}
       <section id="docs" className="min-h-[70vh] bg-[#060910] px-8 md:px-16 lg:px-20 py-24 relative overflow-hidden">
         <FadingVideo
-          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260619_191346_9d19d66e-86a4-47f7-8dc6-712c1788c3b2.mp4"
+          src="https://assets.mixkit.co/videos/4240/4240-720.mp4"
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-30"
         />
         <div className="absolute inset-0 bg-black/70 z-[1]" />
