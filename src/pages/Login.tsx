@@ -28,12 +28,12 @@ export default function Login() {
   return (
     <div className="min-h-screen bg-black text-white font-body relative overflow-hidden">
       <FadingVideo
-        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260619_191346_9d19d66e-86a4-47f7-8dc6-712c1788c3b2.mp4"
+        src="https://assets.mixkit.co/videos/34515/34515-720.mp4"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 z-[1]" />
+      <div className="absolute inset-0 bg-black/75 z-[1]" />
 
       <div className="relative z-10 min-h-screen flex flex-col">
         {/* Top bar */}
