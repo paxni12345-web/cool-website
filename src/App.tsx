@@ -112,7 +112,7 @@ export default function App() {
       {/* ========== HERO ========== */}
       <section className="h-screen overflow-hidden bg-black relative">
         <FadingVideo
-          src="https://assets.mixkit.co/videos/34515/34515-720.mp4"
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260619_191346_9d19d66e-86a4-47f7-8dc6-712c1788c3b2.mp4"
           className="absolute left-1/2 top-0 -translate-x-1/2 object-cover object-top z-0"
           style={{ width: '120%', height: '120%' }}
         />
@@ -239,7 +239,7 @@ export default function App() {
       {/* ========== CAPABILITIES (existing) ========== */}
       <section className="min-h-screen overflow-hidden bg-black relative" id="features">
         <FadingVideo
-          src="https://assets.mixkit.co/videos/3237/3237-720.mp4"
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_093722_ccfc7ebf-182f-419f-8a62-2dc02db7dd9d.mp4"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
         <div className="relative z-10 px-8 md:px-16 lg:px-20 pt-24 pb-10 flex flex-col min-h-screen">
